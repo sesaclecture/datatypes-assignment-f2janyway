@@ -94,6 +94,7 @@ def is_quoted_nonempty(s: str) -> bool:
     if not isinstance(s, str):
         return False
     s2 = s.strip()
+    print(s)
     return len(s2) >= 2 and s2[0] == '"' and s2[-1] == '"' and s2 not in ('""', '" "')
 
 
